@@ -1,0 +1,34 @@
+import java.util.*;
+
+class array_comparison{
+  public static void main(String[] args){
+    Scanner s = new Scanner(System.in);
+    int[] array1 = new int[4];
+    int[] array2 = new int[4];
+    System.out.println("Enter in your first set of array (four numbers)");
+    for (int i =0; i<=3; i++){
+      array1[i] = s.nextInt();
+    }
+    System.out.println("Enter in your second set of array (four numbers)");
+    for (int j =0; j<=3; j++){
+      array2[j] = s.nextInt();
+    }
+    
+    if (arrayMatch(array1, array2)) {
+      System.out.println("Your arrays do match");
+    } 
+    else {
+      System.out.println("Your arrays do not match");
+    }
+  }
+    
+    public static boolean arrayMatch (int[] x, int[] y){
+    for (int ij =0; ij<=3; ij++){
+      if( x[ij] !=y[ij]){
+        return false;
+      }
+      
+    }
+   return true;
+  }
+}
