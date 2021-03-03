@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+#Delete a trail from a specified region that you can provide before running this script
+#Make sure to enter in variable information
+
+
 require 'awesome_print'
 require 'aws-sdk-cloudtrail'
 
