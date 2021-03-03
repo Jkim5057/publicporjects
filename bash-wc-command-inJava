@@ -1,0 +1,18 @@
+import java.io.*; 
+import java.util.*;
+
+public class La9Q2 {
+  public static void main(String[] args) throws FileNotFoundException 
+  {
+    File f = new File("file1.txt");
+    int sum = 0;
+    int token = 0;
+    Scanner input = new Scanner(f);
+    while (input.hasNextLine())
+    {
+      token = input.nextInt();
+      sum = sum + token;
+    }
+    System.out.println("The sum of the numbers in the file is " +sum);
+  }
+}
