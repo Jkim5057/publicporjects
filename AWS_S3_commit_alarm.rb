@@ -1,5 +1,9 @@
 1 #!/usr/bin/env ruby
 
+#For object maintenance; too frequent commits
+#Sends an alert if more then one object is sent to specified bucket
+#Security application
+
 
 require 'awesome_print'
 require 'aws-sdk-sns'
@@ -44,6 +48,6 @@ resp=cw.put_metric_alarm({
     period: 3600, 
     unit: "Count",
     evaluation_periods: 1, 
-    threshold: 1, # One object.
+    threshold: 1, 
     comparison_operator: "GreaterThanThreshold"
 })
