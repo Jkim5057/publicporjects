@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Simple text UI based file transfer from the command line
+
 echo "what is the file name?"
 read FILE
 
