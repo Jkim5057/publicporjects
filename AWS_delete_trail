@@ -10,7 +10,7 @@ regiontouse="----"          #<-----------enter region
 
 
 
-client = Aws::CloudTrail::Client.new(region: 'regiontouse')
+client = Aws::CloudTrail::Client.new(region: regiontouse)
 begin
     resp = client.delete_trail({
         name: name, # required
