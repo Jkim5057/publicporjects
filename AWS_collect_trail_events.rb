@@ -11,7 +11,6 @@ require 'aws-sdk-cloudtrail'
 
 regionname='---your-region---'
 
-
 def show_event(event)
     puts 'Event Name: ' + event.event_name.to_s
     puts 'Event ID: ' + event.event_id.to_s
