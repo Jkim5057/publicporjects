@@ -2,7 +2,7 @@
 
 #Look up events from a Cloudtrail you've created
 #Maintain awareness of API access
-#Can be used for security
+#Can be used monitor for security purposes
 
 
 $LOAD_PATH << "."
