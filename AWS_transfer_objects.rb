@@ -3,6 +3,10 @@
 require 'aws-sdk-s3'
 require 'awesome_print'
 
+#Send a file by key name from one bucket to another
+#Simple transfer
+#Configurable to add step functions
+
 
 bucket_origin = '--origin--'                          #<---------- Enter bucket of origin
 bucket_destination = '--destination--'                #<---------- Enter bucket destination
