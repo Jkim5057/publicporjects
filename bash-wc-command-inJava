@@ -1,10 +1,15 @@
+#I read somewhere that the tail command was 2,000 lines of code in C so I was interested in (partially) recreating another command, in Java this time
+
 import java.io.*; 
 import java.util.*;
 
-public class La9Q2 {
+public class WC{
   public static void main(String[] args) throws FileNotFoundException 
   {
-    File f = new File("file1.txt");
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter in a file name");
+    String  enteredFile = s.nextLine();
+    File f = new File("enteredFile");
     int sum = 0;
     int token = 0;
     Scanner input = new Scanner(f);
@@ -16,3 +21,4 @@ public class La9Q2 {
     System.out.println("The sum of the numbers in the file is " +sum);
   }
 }
+
