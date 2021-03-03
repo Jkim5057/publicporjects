@@ -24,7 +24,6 @@ regionname="-----"       #<----------enter in your region where your bucket resi
 arnobj = Aws::ARN.new(partition: 'aws', service: 'sns', region: regionname ,account_id: accountnum, resource: topicname)
 topicarn = arnobj.to_s()
 puts "Topic ARN: #{topicarn}"
-MyLog.log.info"Topic ARN: #{topicarn}"
 cw = Aws::CloudWatch::Client.new(region: regionname) 
 alarm_name = "Frequent Commits"
 resp=cw.put_metric_alarm({
