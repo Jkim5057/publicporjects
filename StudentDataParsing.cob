@@ -4,10 +4,10 @@
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.   
            SELECT EMPLOYEE-DATA   ASSIGN TO 
-         "C:\USERS\Desktop\COBOL\opencobol11\LABDATA.DAT"
+         "-------filepath--------"
                  ORGANIZATION IS LINE SEQUENTIAL.
            SELECT PAYROLL-LISTING  ASSIGN TO 
-         "C:\USERS\Desktop\COBOL\opencobol11\RD.DAT"
+         "-------filepath--------"
                  ORGANIZATION IS LINE SEQUENTIAL.
        DATA DIVISION.
        FILE SECTION.
