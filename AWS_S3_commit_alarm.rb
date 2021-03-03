@@ -1,4 +1,4 @@
-1 #!/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 #For object maintenance; too frequent commits
 #Sends an alert if more then one object is sent to specified bucket
