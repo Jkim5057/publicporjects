@@ -1,4 +1,11 @@
 #!/bin/bash
+
+#metar data analysis for independent pilots/aviation industry
+
+#Environmental data analysis
+
+#Batch processing potential with scripts that enable scaling
+
 printf "Report type:   "
 egrep -o 'METAR|SPECI' metar.txt
 printf "Airport code: "
