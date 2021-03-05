@@ -1,0 +1,72 @@
+
+
+#XML transformation 
+#aggregates Customer Data from a HTML source into a concise summary
+#supply filename!
+
+
+<xsl:Transform
+  xmlns:xsl="https://github.com/Jkim5057/publicprojects">
+  
+<xsl:template match="file.html">                     <!-- replace file name -->
+  <html>
+    <head><title>DataAggregation</title></head>
+    <body>
+      <div style=background-color: white; padding=1em; ">
+        <h1>data</h1>
+        <xsl:apply-templates/>
+      </div>   
+    </body>
+  </html>
+</xsl:template>
+
+<xsl:template match="Customer">
+  <p>
+    <xsl:apply-templates select="Client ID"/>  
+    <xsl:apply-templates select="Name"/>
+    <xsl:apply-templates select="Address"/>
+    <xsl:apply-templates select="Payment Due Total"/>
+    <xsl:apply-templates select="Purchase Total"/>
+    <xsl:apply-templates select="Last Purchase Date"/>
+    <xsl:apply-templates select=""/>
+  </p>
+</xsl:template>
+
+<xsl:template match="Payment Due Total">
+  Title: <span style="color:#ff0000">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="Client ID">
+  Title: <span style="color:#ff0000">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="Name">
+  Title: <span style="color:#0000ff">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="Address">
+  Title: <span style="color:#0000ff">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match=Purchase Total">
+  Title: <span style="color:#0000ff">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+<xsl:template match="Last Purchase Date">
+  Title: <span style="color:#0000ff">
+  <xsl:value-of select="."/></span>
+  <br />
+</xsl:template>
+
+
+</xsl:stylesheet>
